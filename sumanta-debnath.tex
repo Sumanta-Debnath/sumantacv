@@ -46,26 +46,28 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\newcommand{\resumePoint}[1]{
+  \item\small{#1}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \textbf{#1}\hfill #2\\[1pt]
+    \textit{\small #3}\hfill\textit{\small #4}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, itemsep=3pt, parsep=0pt, topsep=2pt, partopsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=2pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,20 +78,18 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\LARGE Sumanta Debnath} & Email : \href{mailto:sumantadebnath183@gmail.com}{sumantadebnath183@gmail.com}\\
-  \href{http://sourabhbajaj.com/}{add portfolio link} & Mobile : +91-7980459795 \\
-  LinkedIn: \href{www.linkedin.com/in/sumanta-debnath-587329206/}{linkedin.com/in/sumanta-debnath}
+  \href{https://example.com}{add portfolio link} & Mobile : \href{tel:+917980459795}{+91-7980459795} \\
+  LinkedIn: \href{https://www.linkedin.com/in/sumanta-debnath-587329206/}{linkedin.com/in/sumanta-debnath}
 \end{tabular*}
 
 
-%-----------EDUCATION-----------------
-\section{Education}
+%-----------SKILLS SUMMARY-----------------
+\section{Skills Summary}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+    \resumeItem{Languages}{Add languages here}
+    \resumeItem{Frameworks}{Add frameworks here}
+    \resumeItem{Databases}{Add databases here}
+    \resumeItem{Platforms}{Add platforms here}
   \resumeSubHeadingListEnd
 
 
@@ -98,75 +98,93 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
+      {BlueVector AI}{Kolkata, India}
+      {Cloud Developer}{Apr 2025 - Present}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumePoint{Describe an achievement with \textbf{bold key terms} and measurable impact.}
+        \resumePoint{Describe another achievement with \textbf{bold key terms} and measurable impact.}
+        \resumePoint{Describe another achievement with \textbf{bold key terms} and measurable impact.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
+      {BlueVector AI}{Kolkata, India}
+      {Associate Cloud Developer}{Nov 2024 - Mar 2025}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumePoint{Describe an achievement with \textbf{bold key terms} and measurable impact.}
+        \resumePoint{Describe another achievement with \textbf{bold key terms} and measurable impact.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      {Nozti Cyber Sec Pvt. Ltd.}{Ahmedabad, India}
+      {Cybersecurity Executive}{Jul 2024 - Oct 2024}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumePoint{Describe an achievement with \textbf{bold key terms} and measurable impact.}
+        \resumePoint{Describe another achievement with \textbf{bold key terms} and measurable impact.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DT Cyber Consulting}{Remote}
+      {Cybersecurity Intern}{Feb 2024 - May 2024}
+      \resumeItemListStart
+        \resumePoint{Designed and developed a 12-week cybersecurity bootcamp curriculum from scratch as the Subject Matter Expert, leveraging hands-on industry experience to prepare students for cybersecurity careers.}
+        \resumePoint{Mentored students through 1-on-1 guidance and career coaching, helping them build practical skills and identify suitable cybersecurity career pathways.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mastercard}{Remote}
+      {Cybersecurity Intern}{Sep 2023}
+      \resumeItemListStart
+        \resumePoint{Implemented targeted security training, identified security training gaps, and helped identify and report threats including phishing attempts.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PES University}{Bengaluru, India}
+      {Master of Computer Applications}{2022 - 2024}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dayananda Sagar Institutions}{Bengaluru, India}
+      {Bachelor of Computer Applications}{2019 - 2022}
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeItem{Project Name (Tech 1, Tech 2, Tech 3)}
+      {Short description of the project, what it does and its impact. Tech: \textbf{Tech 1}, \textbf{Tech 2}.}
+    \resumeItem{Project Name (Tech 1, Tech 2, Tech 3)}
+      {Short description of the project, what it does and its impact.}
+    \resumeItem{Project Name (Tech 1, Tech 2, Tech 3)}
+      {Short description of the project, what it does and its impact.}
   \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
- \resumeSubHeadingListEnd
+
+%-----------HONORS AND AWARDS-----------------
+\section{Honors and Awards}
+  \resumeSubHeadingListStart
+    \resumePoint{Awarded \textbf{Award Name}. Acknowledged by Organisation.}
+    \resumePoint{\textbf{Certification Name} from Issuing Body.}
+    \resumePoint{Another achievement or publication with \textbf{bold key terms}.}
+  \resumeSubHeadingListEnd
+
+
+%-----------COMMUNITY AND LEADERSHIP-----------------
+\section{Community and Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Role / Organisation}{City, Country}
+      {One-line description of what you did.}{Year -- Present}
+    \resumeSubheading
+      {Role / Organisation}{City, Country}
+      {One-line description of what you did.}{Year -- Year}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
